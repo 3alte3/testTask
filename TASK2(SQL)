@@ -1,0 +1,8 @@
+*По какой-то причине было невозможно восстановить базу из дампа, примерные запросы ниже
+
+SELECT COUNT(id), title
+FROM notebooks\_notebook 
+GROUP BY title order by DESC;
+
+SELECT title,count(title),ROUND(depth 1) as depth,ROUND(width 1) as width,ROUND(height 1) as height
+  as salary FROM notebooks\_notebook group by depth,width,height ;
